@@ -5,7 +5,7 @@ import requests
 from datetime import date, timedelta, datetime
 from dateutil.rrule import rrule, MONTHLY
 from colorama import Fore
-import plotter
+from Lab_01 import plotter
 
 API_KEY = '6532d6454b8aa370768e63d6ba5a832e'
 
@@ -47,7 +47,7 @@ def fahrenheit_to_celsius(temperature: float) -> float:
 
 
 def parse_data_from_file() -> pd.DataFrame:
-    data = pd.read_csv(filepath_or_buffer='../DATABASE.csv',
+    data = pd.read_csv(filepath_or_buffer='data/DATABASE.csv',
                        # index_col='day/month',
                        usecols=['day/month', 'Time', 'Temperature', 'Dew Point', 'Humidity', 'Wind',
                                 'Wind Speed', 'Wind Gust', 'Pressure', 'Condition'

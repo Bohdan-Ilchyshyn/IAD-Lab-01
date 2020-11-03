@@ -1,1 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea
+.idea/.gitignore
+.idea/IAD_Labs.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
